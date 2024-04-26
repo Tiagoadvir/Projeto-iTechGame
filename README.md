@@ -1,5 +1,6 @@
 # Projeto-iTechGame
 Prova técnica para Cód.X
+Delphi 11.3
 
 Cenário:
 O cliente solicitou um sistema de estatística onde irá fornecer informações de seus
@@ -29,3 +30,5 @@ como gráfico ou como indicadores.
 
 Nessse projeto utilizei o restrequest4delphi do vinicius, os dados são providos apartir de uma api, tanto  para a aplicação hibrida (desktop / mobile), quanto para a aplicação vcl.
 Foi utilizado duas units que o Heber da 99codes utiliza, que gera mensagens alerts personalizadas,e um combobox personalizados.
+
+O banco de dados sqlite será cirado em tempo de execução, e inserido os dados predeterminados como categoria, console, e titulo.
