@@ -1,0 +1,18 @@
+program iTechGame;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  View.Teste in 'SRC\view\View.Teste.Pas' {frmPrincipal},
+  controllers.iTechGame.Console in 'SRC\controllers\controllers.iTechGame.Console.pas',
+  DAO.iTechGame in 'SRC\dao\DAO.iTechGame.pas' {DmGlobal: TDataModule},
+  uFancyDialog in 'SRC\units\uFancyDialog.pas',
+  uCombobox in 'SRC\units\uCombobox.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

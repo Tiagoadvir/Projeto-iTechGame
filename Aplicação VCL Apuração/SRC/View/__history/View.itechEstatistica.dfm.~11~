@@ -1,0 +1,65 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'iTechGamer Estat'#237'stica'
+  ClientHeight = 524
+  ClientWidth = 992
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  OnClose = FormClose
+  OnCreate = FormCreate
+  TextHeight = 15
+  object pBase: TPanel
+    Left = 0
+    Top = 0
+    Width = 992
+    Height = 524
+    Align = alClient
+    TabOrder = 0
+    ExplicitTop = 24
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object pGrid: TPanel
+      Left = 0
+      Top = 88
+      Width = 992
+      Height = 436
+      Align = alCustom
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      TabOrder = 0
+      ExplicitWidth = 1017
+      ExplicitHeight = 445
+      object Grid: TDBGrid
+        Left = 1
+        Top = 1
+        Width = 990
+        Height = 434
+        Align = alClient
+        DataSource = Ds
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -12
+        TitleFont.Name = 'Segoe UI'
+        TitleFont.Style = []
+      end
+    end
+    object Button1: TButton
+      Left = 32
+      Top = 48
+      Width = 75
+      Height = 25
+      Caption = 'Pesquisar'
+      TabOrder = 1
+      OnClick = Button1Click
+    end
+  end
+  object Ds: TDataSource
+    Left = 152
+    Top = 16
+  end
+end

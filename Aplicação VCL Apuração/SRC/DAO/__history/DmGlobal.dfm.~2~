@@ -1,0 +1,4 @@
+object DmGloball: TDmGloball
+  Height = 239
+  Width = 443
+end

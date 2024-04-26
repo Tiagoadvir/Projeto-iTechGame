@@ -1,0 +1,10 @@
+object Dm: TDm
+  OnCreate = DataModuleCreate
+  Height = 218
+  Width = 342
+  object Conn: TFDConnection
+    BeforeConnect = ConnBeforeConnect
+    Left = 48
+    Top = 40
+  end
+end

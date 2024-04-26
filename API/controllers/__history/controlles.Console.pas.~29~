@@ -1,0 +1,89 @@
+unit controlles.Console;
+
+interface
+
+uses
+    Horse,
+    Horse.Jhonson,
+    Horse.CORS,
+    System.SysUtils,
+    System.JSON;
+
+    procedure RegistrarRotas;
+    procedure ListarConsoles(Req : THorseRequest; Res : THorseResponse);
+    procedure ListarCategoria(Req : THorseRequest; Res : THorseResponse);
+    procedure ListarTitulo(Req : THorseRequest; Res : THorseResponse);
+    procedure GravarPesquisa(Req : THorseRequest; Res : THorseResponse);
+
+implementation
+ uses
+ uPrincipal;
+
+procedure RegistrarRotas;
+begin
+   THorse.Get('/console', ListarConsoles);
+   THorse.Get('/categoria', ListarCategoria);
+   THorse.Get('/titulo', ListarTitulo);
+   THorse.Post('/gravar_pesquisa', GravarPesquisa);
+end;
+
+procedure ListarConsoles(Req : THorseRequest; Res : THorseResponse);
+begin
+
+  try
+   Res.Send<TJSONArray>(DmGlobal.ListarConsole);
+  except
+    Res.Send('Erro ao listar Consoles').Status(500);
+    Exit
+  end
+end;
+
+procedure ListarCategoria(Req : THorseRequest; Res : THorseResponse);
+begin
+
+  try
+   Res.Send<TJSONArray>(DmGlobal.ListarCategoria);
+  except
+    Res.Send('Erro ao listar Consoles').Status(500);
+    Exit
+  end
+end;
+
+procedure ListarTitulo(Req : THorseRequest; Res : THorseResponse);
+begin
+
+  try
+   Res.Send<TJSONArray>(DmGlobal.ListarTitulo);
+  except
+    Res.Send('Erro ao listar titulo').Status(500);
+    Exit
+  end
+end;
+
+procedure GravarPesquisa(Req : THorseRequest; Res : THorseResponse);
+var
+ body : TJSONObject;
+ nome : string;
+ id_console, id_categoria, id_titulo : integer;
+begin
+    // Adiciona uma mensagem de log para imprimir o conteúdo do corpo da requisição
+
+   body := Req.Body<TJSONObject>;
+
+   nome          := body.GetValue<string>('nome', '');
+   id_console    := body.GetValue<Integer>('id_console', 0);
+   id_categoria  := body.GetValue<integer>('id_categoria', 0);
+   id_titulo     := body.GetValue<Integer>('id_titulo', 0);
+
+    try
+       DmGlobal.GravaPesquisa();
+       Res.Send('Dados registrados com sucesso!').Status(201);
+    except  on E: Exception do
+      begin
+        Res.Send('Erro ao gravar pesquisa: ' + E.Message).Status(500);
+        Exit
+      end;
+    end
+end;
+
+end.

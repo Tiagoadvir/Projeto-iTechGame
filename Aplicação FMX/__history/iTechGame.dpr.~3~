@@ -1,0 +1,15 @@
+program iTechGame;
+
+uses
+  System.StartUpCopy,
+  FMX.Forms,
+  View.Teste in 'SRC\view\View.Teste.Pas' {frmPrincipal},
+  controllers.iTechGame.Console in 'SRC\controllers\controllers.iTechGame.Console.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.Run;
+end.

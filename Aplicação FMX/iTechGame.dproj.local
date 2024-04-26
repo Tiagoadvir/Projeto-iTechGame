@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/11/16 08:51:04.000.547,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/20 16:57:29.000.559,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/11/20 16:57:40.000.444,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/12/11 10:23:48.000.085,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/01/14 18:37:59.000.517,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/02/06 10:06:14.000.650,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/02/06 12:44:26.000.587,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/08 18:53:04.000.892,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 13:22:03.000.358,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:30:00.000.836,=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:32:10.000.598,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\SRC\view\View.Teste.fmx=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2024/04/25 14:32:10.000.598,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\SRC\view\View.Teste.pas=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 14:32:39.000.165,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\iTechGame.dproj=C:\Users\Tiago Robson\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/04/25 15:55:34.000.132,=C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 15:56:15.000.225,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\Unit1.pas=C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\SRC\controllers\controllers.iTechGame.Console.pas</Transaction>
+    <Transaction>2024/04/25 23:43:25.000.144,=C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 23:44:29.000.079,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\SRC\dao\DAO.iTechGame.pas=C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\Unit1.pas</Transaction>
+    <Transaction>2024/04/25 23:44:29.000.079,C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\SRC\dao\DAO.iTechGame.dfm=C:\Users\Tiago Robson\Desktop\Teste prático\Aplicação\Unit1.dfm</Transaction>
+    <Transaction>2024/04/26 10:39:15.704,=F:\PROVA TÉCNICA COD.X\Aplicação FMX\SRC\units\uFancyDialog.pas</Transaction>
+    <Transaction>2024/04/26 10:41:10.760,=F:\PROVA TÉCNICA COD.X\Aplicação FMX\SRC\units\uCombobox.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android64="" Android=""/>
+	</ActiveMobileDevice>
+</BorlandProject>
